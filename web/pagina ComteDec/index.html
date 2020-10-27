@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Este texto es el título del documento</title>
+ <meta charset="utf-8">
+ <meta name="description" content="Este es un documento HTML5">
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+ <link rel="stylesheet" href="cssComteDec/adaptabletodos.css">
+ <script>
+  var visible = false;
+  function iniciar() {
+  var elemento = document.getElementById("menu-img");
+  elemento.addEventListener("click", mostrarMenu);
+  }
+  function mostrarMenu() {
+  var elemento = document.getElementById("menuprincipal");
+  if (!visible) {
+  elemento.style.display = "flex";
+  visible = true;
+  } else {
+  elemento.style.display = "none";
+  visible = false;
+  }
+  }
+  window.addEventListener("load", iniciar);
+ </script>
+</head>
+<!--hola-->
+<body>
+  <!--cabecera-->
+ <header id="cabeceralogo">
+ <div>
+ <h1>ComteDec</h1>
+ </div>
+ </header>
+ <nav id="menuicono">
+ <img src="imagenesCom/menu.png" width="35" height="28" id="menu-img">
+</nav>
+ <nav id="menuprincipal">
+ <div>
+ <ul id="listamenu">
+ <li>/<a href="index.html">¡Bienbenidos a todos!</a></li>
+ <li>/<a href="fotos.html"></a></li>
+ <li>/<a href="videos.html"></a></li>
+ <li>/<a href="contacto.html"></a></li>
+ <li>/<a href="algo.html"></a></li>
+ <li>/<a href="algo.html"></a></li>
+ </ul>
+ </div>
+ </nav>
+ <main>
+ <div>
+ <section id="articulosprincipales">
+ <article>
+ <h1>Primer Saludo</h1>
+ <time datetime="2020-10-09" pubdate>
+ <div class="numerodia">09</div>
+ <div class="nombredia">Viernes</div>
+ </time>
+ <p>Primera pagina de la compania</p>
+ <figure>
+ <img src="imagenesCom/p.jpg" height="200">
+ </figure>
+ </article>
+ <article>
+ <h1>¡Celebremos!</h1>
+ <time datetime="2020-10-09" pubdate>
+ <div class="numerodia">09</div>
+ <div class="nombredia">Viernes</div>
+ </time>
+ <p>ComteDec por Los hermanos DECIGA...</p>
+ <figure>
+ <img src="imagenesCom/o.png" height="200">
+ </figure>
+ </article>
+ </section>
+ <aside id="infoadicional">
+ <h1>--------------</h1>
+ <p>----------</p>
+ <p>----------</p>
+ </aside>
+ </div>
+ </main>
+ <footer id="pielogo">
+   <div>
+ <section class="seccionpie">
+ <h1>Sitio Web</h1>
+ <p><a href="index.html">- - -</a></p>
+ <p><a href="fotos.html"> - -</a></p>
+ <p><a href="videos.html">- - -</a></p>
+ </section>
+ <section class="seccionpie">
+ <h1>Ayuda</h1>
+ <p><a href="contacto.html"><<>></a></p>
+ </section>
+ <section class="seccionpie">
+ <address>Edo, Mexico</address>
+ <small>&copy; Derechos Reservados 2019</small>
+ </section>
+ </div>
+ </footer>
+</body>
+</html>
